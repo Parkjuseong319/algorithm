@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
@@ -20,7 +19,7 @@ public class Main {
 			}
 		}
 		ArrayList<String> list = new ArrayList<String>(set);
-		Collections.sort(list, Collections.reverseOrder());
+		Collections.sort(list, Collections.reverseOrder());    // reverseOrder()는 역순 정렬하는 메서드
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
