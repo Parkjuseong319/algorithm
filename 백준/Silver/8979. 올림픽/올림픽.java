@@ -22,9 +22,10 @@ public class Main {
 		    }
 		});
 		
-		int rank = 1;
+		int rank = 0;
 		int idx = 0;
-		while(idx < n) {
+		while(true) {
+            rank++;
 			if(nation[idx][0] == k) {
 				break;
 			}
@@ -32,7 +33,6 @@ public class Main {
 				idx++;		
 				continue;
 			}
-			rank++;
 			idx++;
 		}
 		System.out.println(rank);
