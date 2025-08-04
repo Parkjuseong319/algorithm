@@ -11,8 +11,7 @@ public class Main{
 			arr[i][1] = sc.nextInt();	// height
 		}
 		
-		int x = n;
-		int y = n;
+		
 		int rank = 1;
 		int[] arr2 = new int[n];
 		for (int i = 0; i < n; i++) {
