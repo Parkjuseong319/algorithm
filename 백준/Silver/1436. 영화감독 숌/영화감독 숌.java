@@ -5,17 +5,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int result = 666;
-        String s = "666";
         int count = 1;
-        StringBuilder sb = new StringBuilder();
         while(count != n){
             result++;
-            if(String.valueOf(result).contains(s)){
+            if(String.valueOf(result).contains("666")){
                 count++;
             }
         }
-
         System.out.println(result);
-
     }
 }
