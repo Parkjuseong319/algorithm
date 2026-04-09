@@ -6,7 +6,6 @@ import java.util.*;
 public class Main {
     static ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
     static boolean[] visited;
-    static int count;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -28,11 +27,9 @@ public class Main {
         for (int i = 0; i <= n; i++) {  // 오름차순으로 방문
             Collections.sort(graph.get(i));
         }
-        count = r;
         dfs(r);
         System.out.println();
 
-        count = r;
         visited = new boolean[n + 1];
         bfs(r);
         br.close();
@@ -64,6 +61,5 @@ public class Main {
                 }
             }
         }
-
     }
 }
